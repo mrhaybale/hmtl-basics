@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/html-basics/",
     "preview": "vite preview",
-    "publish": "npm run build && node scripts/publish.js"
+    "publish": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
